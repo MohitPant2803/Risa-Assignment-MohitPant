@@ -1,0 +1,1074 @@
+{
+  "metadata": {
+    "project": "FestGrowth - Festival Growth Command Center",
+    "candidate": "Mohit",
+    "city": "Delhi NCR",
+    "historical_event": "CampusFest 2025",
+    "target_festival": "DILLIVERSE 2027",
+    "targets_summary": {
+      "historical": {
+        "launch_plan": {
+          "name": "Attendee launch plan",
+          "effective_at": "2025-01-15",
+          "identified_goal": 3200,
+          "registration_goal": 2800,
+          "visitors_goal": 1800,
+          "budget": 240000
+        },
+        "revised_plan": {
+          "name": "Attendee revised plan",
+          "effective_at": "2025-03-15",
+          "identified_goal": 3600,
+          "registration_goal": 3200,
+          "visitors_goal": 2200,
+          "budget": 300000
+        }
+      },
+      "dilliverse_base": {
+        "attendees": 10000,
+        "budget": 1200000,
+        "cpa": 120.0
+      },
+      "dilliverse_stretch": {
+        "attendees": 15000,
+        "budget": 1425000,
+        "cpa": 95.0
+      }
+    }
+  },
+  "historical_campaigns": [
+    {
+      "id": "C01",
+      "name": "Campus Ambassadors",
+      "channel": "ambassadors",
+      "owner": "Meera Iyer",
+      "budget": 45000,
+      "spend": 42000.0,
+      "target_registrations": 500,
+      "target_attendees": 350,
+      "impressions": 138349,
+      "clicks": 4918,
+      "reach": 90171,
+      "sessions": 3724,
+      "identified_people": 600,
+      "registrations": 520,
+      "attendees": 390,
+      "cpr": 80.77,
+      "cpa": 107.69,
+      "show_up_rate": 75.0,
+      "status": "completed",
+      "start_date": "2025-01-25",
+      "end_date": "2025-04-13",
+      "objective": "Turn peer conversations into identified interest and completed registrations",
+      "target_audience": "Students hearing about the event through peer representatives"
+    },
+    {
+      "id": "C02",
+      "name": "Paid Social",
+      "channel": "paid_social",
+      "owner": "Arjun Verma",
+      "budget": 60000,
+      "spend": 93000.0,
+      "target_registrations": 500,
+      "target_attendees": 200,
+      "impressions": 325693,
+      "clicks": 6867,
+      "reach": 200922,
+      "sessions": 5282,
+      "identified_people": 960,
+      "registrations": 680,
+      "attendees": 340,
+      "cpr": 136.76,
+      "cpa": 273.53,
+      "show_up_rate": 50.0,
+      "status": "completed",
+      "start_date": "2025-02-01",
+      "end_date": "2025-04-13",
+      "objective": "Acquire new interest and test progression from clicks to registration",
+      "target_audience": "Students discovering the event through paid social content"
+    },
+    {
+      "id": "C03",
+      "name": "Creator Partners",
+      "channel": "creators",
+      "owner": "Nisha Rao",
+      "budget": 35000,
+      "spend": 59000.0,
+      "target_registrations": 300,
+      "target_attendees": 200,
+      "impressions": 212149,
+      "clicks": 5336,
+      "reach": 142321,
+      "sessions": 4118,
+      "identified_people": 490,
+      "registrations": 350,
+      "attendees": 175,
+      "cpr": 168.57,
+      "cpa": 337.14,
+      "show_up_rate": 50.0,
+      "status": "completed",
+      "start_date": "2025-02-10",
+      "end_date": "2025-04-13",
+      "objective": "Move creator-content engagement toward programme exploration and registration",
+      "target_audience": "Students engaging with creator-led event content"
+    },
+    {
+      "id": "C04",
+      "name": "College Partnerships",
+      "channel": "college_partners",
+      "owner": "Meera Iyer",
+      "budget": 35000,
+      "spend": 31000.0,
+      "target_registrations": 500,
+      "target_attendees": 350,
+      "impressions": 150205,
+      "clicks": 6736,
+      "reach": 98433,
+      "sessions": 5246,
+      "identified_people": 500,
+      "registrations": 450,
+      "attendees": 385,
+      "cpr": 68.89,
+      "cpa": 80.52,
+      "show_up_rate": 85.6,
+      "status": "completed",
+      "start_date": "2025-01-28",
+      "end_date": "2025-04-13",
+      "objective": "Help group organizers progress from programme questions to confirmed attendance",
+      "target_audience": "College clubs and groups exploring participation together"
+    },
+    {
+      "id": "C05",
+      "name": "Student Referrals",
+      "channel": "referrals",
+      "owner": "Dev Malhotra",
+      "budget": 35000,
+      "spend": 19000.0,
+      "target_registrations": 300,
+      "target_attendees": 200,
+      "impressions": 72438,
+      "clicks": 3453,
+      "reach": 48915,
+      "sessions": 2575,
+      "identified_people": 410,
+      "registrations": 350,
+      "attendees": 275,
+      "cpr": 54.29,
+      "cpa": 69.09,
+      "show_up_rate": 78.6,
+      "status": "completed",
+      "start_date": "2025-02-12",
+      "end_date": "2025-04-13",
+      "objective": "Convert invited friends while tracking registration completion",
+      "target_audience": "Friends invited by already interested students"
+    },
+    {
+      "id": "C06",
+      "name": "Organic Search",
+      "channel": "organic",
+      "owner": "Arjun Verma",
+      "budget": 35000,
+      "spend": 14000.0,
+      "target_registrations": 300,
+      "target_attendees": 200,
+      "impressions": 68402,
+      "clicks": 2404,
+      "reach": 45091,
+      "sessions": 1893,
+      "identified_people": 330,
+      "registrations": 290,
+      "attendees": 195,
+      "cpr": 48.28,
+      "cpa": 71.79,
+      "show_up_rate": 67.2,
+      "status": "completed",
+      "start_date": "2025-01-20",
+      "end_date": "2025-04-13",
+      "objective": "Help information-seeking visitors find details and complete registration",
+      "target_audience": "People actively searching for event information"
+    },
+    {
+      "id": "C07",
+      "name": "Community Groups",
+      "channel": "community",
+      "owner": "Nisha Rao",
+      "budget": 35000,
+      "spend": 16000.0,
+      "target_registrations": 300,
+      "target_attendees": 200,
+      "impressions": 65682,
+      "clicks": 2474,
+      "reach": 42858,
+      "sessions": 1898,
+      "identified_people": 250,
+      "registrations": 200,
+      "attendees": 165,
+      "cpr": 80.0,
+      "cpa": 96.97,
+      "show_up_rate": 82.5,
+      "status": "completed",
+      "start_date": "2025-02-15",
+      "end_date": "2025-04-13",
+      "objective": "Nurture community interest without over-contacting people who opt out",
+      "target_audience": "Members of student interest and community groups"
+    }
+  ],
+  "historical_time_series": [
+    {
+      "date": "2025-01-20",
+      "spend": 1400.0,
+      "reach": 398,
+      "sessions": 19,
+      "starts": 9,
+      "registrations": 2
+    },
+    {
+      "date": "2025-01-21",
+      "spend": 0.0,
+      "reach": 320,
+      "sessions": 21,
+      "starts": 13,
+      "registrations": 4
+    },
+    {
+      "date": "2025-01-22",
+      "spend": 0.0,
+      "reach": 460,
+      "sessions": 24,
+      "starts": 9,
+      "registrations": 3
+    },
+    {
+      "date": "2025-01-23",
+      "spend": 0.0,
+      "reach": 533,
+      "sessions": 28,
+      "starts": 5,
+      "registrations": 2
+    },
+    {
+      "date": "2025-01-24",
+      "spend": 0.0,
+      "reach": 540,
+      "sessions": 21,
+      "starts": 10,
+      "registrations": 3
+    },
+    {
+      "date": "2025-01-25",
+      "spend": 4300.0,
+      "reach": 1658,
+      "sessions": 73,
+      "starts": 30,
+      "registrations": 13
+    },
+    {
+      "date": "2025-01-26",
+      "spend": 0.0,
+      "reach": 1810,
+      "sessions": 55,
+      "starts": 14,
+      "registrations": 9
+    },
+    {
+      "date": "2025-01-27",
+      "spend": 2100.0,
+      "reach": 1606,
+      "sessions": 73,
+      "starts": 24,
+      "registrations": 5
+    },
+    {
+      "date": "2025-01-28",
+      "spend": 3150.0,
+      "reach": 2247,
+      "sessions": 128,
+      "starts": 28,
+      "registrations": 13
+    },
+    {
+      "date": "2025-01-29",
+      "spend": 0.0,
+      "reach": 2599,
+      "sessions": 127,
+      "starts": 32,
+      "registrations": 19
+    },
+    {
+      "date": "2025-01-30",
+      "spend": 0.0,
+      "reach": 3022,
+      "sessions": 133,
+      "starts": 31,
+      "registrations": 11
+    },
+    {
+      "date": "2025-01-31",
+      "spend": 0.0,
+      "reach": 2783,
+      "sessions": 119,
+      "starts": 27,
+      "registrations": 12
+    },
+    {
+      "date": "2025-02-01",
+      "spend": 16050.0,
+      "reach": 6280,
+      "sessions": 259,
+      "starts": 37,
+      "registrations": 22
+    },
+    {
+      "date": "2025-02-02",
+      "spend": 0.0,
+      "reach": 7125,
+      "sessions": 246,
+      "starts": 66,
+      "registrations": 28
+    },
+    {
+      "date": "2025-02-03",
+      "spend": 0.0,
+      "reach": 6857,
+      "sessions": 193,
+      "starts": 43,
+      "registrations": 30
+    },
+    {
+      "date": "2025-02-04",
+      "spend": 4725.0,
+      "reach": 7790,
+      "sessions": 251,
+      "starts": 52,
+      "registrations": 18
+    },
+    {
+      "date": "2025-02-05",
+      "spend": 0.0,
+      "reach": 5427,
+      "sessions": 233,
+      "starts": 52,
+      "registrations": 27
+    },
+    {
+      "date": "2025-02-06",
+      "spend": 0.0,
+      "reach": 5307,
+      "sessions": 210,
+      "starts": 73,
+      "registrations": 30
+    },
+    {
+      "date": "2025-02-07",
+      "spend": 14400.0,
+      "reach": 5577,
+      "sessions": 194,
+      "starts": 48,
+      "registrations": 34
+    },
+    {
+      "date": "2025-02-08",
+      "spend": 2100.0,
+      "reach": 7276,
+      "sessions": 227,
+      "starts": 56,
+      "registrations": 32
+    },
+    {
+      "date": "2025-02-09",
+      "spend": 0.0,
+      "reach": 5423,
+      "sessions": 235,
+      "starts": 57,
+      "registrations": 29
+    },
+    {
+      "date": "2025-02-10",
+      "spend": 6100.0,
+      "reach": 8413,
+      "sessions": 310,
+      "starts": 63,
+      "registrations": 31
+    },
+    {
+      "date": "2025-02-11",
+      "spend": 0.0,
+      "reach": 7745,
+      "sessions": 323,
+      "starts": 76,
+      "registrations": 39
+    },
+    {
+      "date": "2025-02-12",
+      "spend": 8400.0,
+      "reach": 10633,
+      "sessions": 328,
+      "starts": 64,
+      "registrations": 44
+    },
+    {
+      "date": "2025-02-13",
+      "spend": 0.0,
+      "reach": 10690,
+      "sessions": 355,
+      "starts": 90,
+      "registrations": 38
+    },
+    {
+      "date": "2025-02-14",
+      "spend": 0.0,
+      "reach": 9488,
+      "sessions": 306,
+      "starts": 73,
+      "registrations": 41
+    },
+    {
+      "date": "2025-02-15",
+      "spend": 10750.0,
+      "reach": 8444,
+      "sessions": 436,
+      "starts": 77,
+      "registrations": 48
+    },
+    {
+      "date": "2025-02-16",
+      "spend": 0.0,
+      "reach": 7791,
+      "sessions": 390,
+      "starts": 83,
+      "registrations": 38
+    },
+    {
+      "date": "2025-02-17",
+      "spend": 17325.0,
+      "reach": 9417,
+      "sessions": 372,
+      "starts": 81,
+      "registrations": 46
+    },
+    {
+      "date": "2025-02-18",
+      "spend": 0.0,
+      "reach": 9506,
+      "sessions": 352,
+      "starts": 86,
+      "registrations": 44
+    },
+    {
+      "date": "2025-02-19",
+      "spend": 0.0,
+      "reach": 12420,
+      "sessions": 377,
+      "starts": 83,
+      "registrations": 38
+    },
+    {
+      "date": "2025-02-20",
+      "spend": 4500.0,
+      "reach": 10117,
+      "sessions": 335,
+      "starts": 82,
+      "registrations": 37
+    },
+    {
+      "date": "2025-02-21",
+      "spend": 0.0,
+      "reach": 9508,
+      "sessions": 427,
+      "starts": 78,
+      "registrations": 47
+    },
+    {
+      "date": "2025-02-22",
+      "spend": 0.0,
+      "reach": 9867,
+      "sessions": 416,
+      "starts": 86,
+      "registrations": 46
+    },
+    {
+      "date": "2025-02-23",
+      "spend": 6450.0,
+      "reach": 10159,
+      "sessions": 383,
+      "starts": 83,
+      "registrations": 42
+    },
+    {
+      "date": "2025-02-24",
+      "spend": 9150.0,
+      "reach": 8605,
+      "sessions": 347,
+      "starts": 83,
+      "registrations": 40
+    },
+    {
+      "date": "2025-02-25",
+      "spend": 0.0,
+      "reach": 9055,
+      "sessions": 389,
+      "starts": 78,
+      "registrations": 42
+    },
+    {
+      "date": "2025-02-26",
+      "spend": 2925.0,
+      "reach": 9777,
+      "sessions": 434,
+      "starts": 81,
+      "registrations": 39
+    },
+    {
+      "date": "2025-02-27",
+      "spend": 14400.0,
+      "reach": 9283,
+      "sessions": 365,
+      "starts": 70,
+      "registrations": 33
+    },
+    {
+      "date": "2025-02-28",
+      "spend": 7125.0,
+      "reach": 12713,
+      "sessions": 400,
+      "starts": 89,
+      "registrations": 35
+    },
+    {
+      "date": "2025-03-01",
+      "spend": 0.0,
+      "reach": 10788,
+      "sessions": 347,
+      "starts": 75,
+      "registrations": 31
+    },
+    {
+      "date": "2025-03-02",
+      "spend": 0.0,
+      "reach": 8626,
+      "sessions": 353,
+      "starts": 61,
+      "registrations": 32
+    },
+    {
+      "date": "2025-03-03",
+      "spend": 0.0,
+      "reach": 9449,
+      "sessions": 347,
+      "starts": 73,
+      "registrations": 23
+    },
+    {
+      "date": "2025-03-04",
+      "spend": 2100.0,
+      "reach": 8878,
+      "sessions": 364,
+      "starts": 68,
+      "registrations": 31
+    },
+    {
+      "date": "2025-03-05",
+      "spend": 9150.0,
+      "reach": 9552,
+      "sessions": 392,
+      "starts": 55,
+      "registrations": 29
+    },
+    {
+      "date": "2025-03-06",
+      "spend": 9375.0,
+      "reach": 10231,
+      "sessions": 338,
+      "starts": 60,
+      "registrations": 26
+    },
+    {
+      "date": "2025-03-07",
+      "spend": 0.0,
+      "reach": 10943,
+      "sessions": 342,
+      "starts": 71,
+      "registrations": 28
+    },
+    {
+      "date": "2025-03-08",
+      "spend": 2400.0,
+      "reach": 8666,
+      "sessions": 318,
+      "starts": 55,
+      "registrations": 22
+    },
+    {
+      "date": "2025-03-09",
+      "spend": 14400.0,
+      "reach": 10837,
+      "sessions": 335,
+      "starts": 60,
+      "registrations": 29
+    },
+    {
+      "date": "2025-03-10",
+      "spend": 0.0,
+      "reach": 9878,
+      "sessions": 290,
+      "starts": 73,
+      "registrations": 28
+    },
+    {
+      "date": "2025-03-11",
+      "spend": 4725.0,
+      "reach": 9371,
+      "sessions": 277,
+      "starts": 78,
+      "registrations": 33
+    },
+    {
+      "date": "2025-03-12",
+      "spend": 0.0,
+      "reach": 8135,
+      "sessions": 292,
+      "starts": 68,
+      "registrations": 37
+    },
+    {
+      "date": "2025-03-13",
+      "spend": 9150.0,
+      "reach": 9295,
+      "sessions": 315,
+      "starts": 85,
+      "registrations": 33
+    },
+    {
+      "date": "2025-03-14",
+      "spend": 2925.0,
+      "reach": 10434,
+      "sessions": 342,
+      "starts": 81,
+      "registrations": 37
+    },
+    {
+      "date": "2025-03-15",
+      "spend": 0.0,
+      "reach": 9362,
+      "sessions": 362,
+      "starts": 80,
+      "registrations": 58
+    },
+    {
+      "date": "2025-03-16",
+      "spend": 3800.0,
+      "reach": 11061,
+      "sessions": 404,
+      "starts": 90,
+      "registrations": 46
+    },
+    {
+      "date": "2025-03-17",
+      "spend": 4300.0,
+      "reach": 10421,
+      "sessions": 359,
+      "starts": 84,
+      "registrations": 46
+    },
+    {
+      "date": "2025-03-18",
+      "spend": 4725.0,
+      "reach": 9871,
+      "sessions": 360,
+      "starts": 92,
+      "registrations": 35
+    },
+    {
+      "date": "2025-03-19",
+      "spend": 9600.0,
+      "reach": 10585,
+      "sessions": 365,
+      "starts": 83,
+      "registrations": 47
+    },
+    {
+      "date": "2025-03-20",
+      "spend": 0.0,
+      "reach": 9104,
+      "sessions": 372,
+      "starts": 90,
+      "registrations": 48
+    },
+    {
+      "date": "2025-03-21",
+      "spend": 0.0,
+      "reach": 8954,
+      "sessions": 363,
+      "starts": 105,
+      "registrations": 52
+    },
+    {
+      "date": "2025-03-22",
+      "spend": 6100.0,
+      "reach": 10568,
+      "sessions": 345,
+      "starts": 96,
+      "registrations": 62
+    },
+    {
+      "date": "2025-03-23",
+      "spend": 1950.0,
+      "reach": 10520,
+      "sessions": 389,
+      "starts": 82,
+      "registrations": 41
+    },
+    {
+      "date": "2025-03-24",
+      "spend": 1600.0,
+      "reach": 10977,
+      "sessions": 357,
+      "starts": 90,
+      "registrations": 58
+    },
+    {
+      "date": "2025-03-25",
+      "spend": 3150.0,
+      "reach": 8982,
+      "sessions": 309,
+      "starts": 92,
+      "registrations": 46
+    },
+    {
+      "date": "2025-03-26",
+      "spend": 0.0,
+      "reach": 8359,
+      "sessions": 388,
+      "starts": 96,
+      "registrations": 57
+    },
+    {
+      "date": "2025-03-27",
+      "spend": 0.0,
+      "reach": 9027,
+      "sessions": 314,
+      "starts": 96,
+      "registrations": 53
+    },
+    {
+      "date": "2025-03-28",
+      "spend": 5700.0,
+      "reach": 10466,
+      "sessions": 355,
+      "starts": 97,
+      "registrations": 48
+    },
+    {
+      "date": "2025-03-29",
+      "spend": 9600.0,
+      "reach": 10813,
+      "sessions": 346,
+      "starts": 96,
+      "registrations": 53
+    },
+    {
+      "date": "2025-03-30",
+      "spend": 0.0,
+      "reach": 10875,
+      "sessions": 340,
+      "starts": 87,
+      "registrations": 41
+    },
+    {
+      "date": "2025-03-31",
+      "spend": 8050.0,
+      "reach": 9991,
+      "sessions": 367,
+      "starts": 100,
+      "registrations": 53
+    },
+    {
+      "date": "2025-04-01",
+      "spend": 4750.0,
+      "reach": 10658,
+      "sessions": 373,
+      "starts": 83,
+      "registrations": 46
+    },
+    {
+      "date": "2025-04-02",
+      "spend": 0.0,
+      "reach": 9229,
+      "sessions": 348,
+      "starts": 93,
+      "registrations": 43
+    },
+    {
+      "date": "2025-04-03",
+      "spend": 0.0,
+      "reach": 10186,
+      "sessions": 378,
+      "starts": 78,
+      "registrations": 46
+    },
+    {
+      "date": "2025-04-04",
+      "spend": 0.0,
+      "reach": 9795,
+      "sessions": 356,
+      "starts": 89,
+      "registrations": 49
+    },
+    {
+      "date": "2025-04-05",
+      "spend": 0.0,
+      "reach": 8535,
+      "sessions": 379,
+      "starts": 104,
+      "registrations": 60
+    },
+    {
+      "date": "2025-04-06",
+      "spend": 0.0,
+      "reach": 10041,
+      "sessions": 385,
+      "starts": 83,
+      "registrations": 49
+    },
+    {
+      "date": "2025-04-07",
+      "spend": 0.0,
+      "reach": 8941,
+      "sessions": 438,
+      "starts": 75,
+      "registrations": 43
+    },
+    {
+      "date": "2025-04-08",
+      "spend": 0.0,
+      "reach": 8899,
+      "sessions": 350,
+      "starts": 73,
+      "registrations": 49
+    },
+    {
+      "date": "2025-04-09",
+      "spend": 27600.0,
+      "reach": 10686,
+      "sessions": 368,
+      "starts": 73,
+      "registrations": 38
+    },
+    {
+      "date": "2025-04-10",
+      "spend": -4000.0,
+      "reach": 8754,
+      "sessions": 355,
+      "starts": 60,
+      "registrations": 40
+    },
+    {
+      "date": "2025-04-11",
+      "spend": 0.0,
+      "reach": 9299,
+      "sessions": 345,
+      "starts": 22,
+      "registrations": 0
+    },
+    {
+      "date": "2025-04-16",
+      "spend": -2000.0,
+      "reach": 0,
+      "sessions": 0,
+      "starts": 0,
+      "registrations": 0
+    },
+    {
+      "date": "2025-04-18",
+      "spend": -500.0,
+      "reach": 0,
+      "sessions": 0,
+      "starts": 0,
+      "registrations": 0
+    }
+  ],
+  "dilliverse_campaigns": [
+    {
+      "id": "DIL-01",
+      "name": "Campus Ambassador Guilds",
+      "channel": "Ambassadors",
+      "owner": "Meera Iyer (Campus Lead)",
+      "budget": 300000,
+      "spend": 145000,
+      "target_registrations": 4000,
+      "target_attendees": 3200,
+      "impressions": 450000,
+      "clicks": 28000,
+      "reach": 180000,
+      "sessions": 24000,
+      "identified_people": 3800,
+      "registrations": 2450,
+      "attendees": 1950,
+      "cpr": 59.18,
+      "cpa": 74.36,
+      "show_up_rate": 79.6,
+      "status": "active",
+      "start_date": "2027-01-05",
+      "end_date": "2027-03-14",
+      "objective": "Recruit 120 ambassadors across 50 DU/IPU colleges to drive verified ticket sales and student attendance.",
+      "target_audience": "North and South Campus DU undergraduate students"
+    },
+    {
+      "id": "DIL-02",
+      "name": "Inter-College Squad Battles",
+      "channel": "College Partnerships",
+      "owner": "Rohan Khanna (Events Lead)",
+      "budget": 240000,
+      "spend": 110000,
+      "target_registrations": 3000,
+      "target_attendees": 2500,
+      "impressions": 380000,
+      "clicks": 22000,
+      "reach": 150000,
+      "sessions": 20000,
+      "identified_people": 2900,
+      "registrations": 1880,
+      "attendees": 1610,
+      "cpr": 58.51,
+      "cpa": 68.32,
+      "show_up_rate": 85.6,
+      "status": "active",
+      "start_date": "2027-01-10",
+      "end_date": "2027-03-14",
+      "objective": "Host inter-college competitive circuits in music, dance, esports; each team brings 30+ cheer supporters.",
+      "target_audience": "College society heads, cultural clubs, and student competitors"
+    },
+    {
+      "id": "DIL-03",
+      "name": "Viral \"Gang of 5\" Passes & Referrals",
+      "channel": "Referrals",
+      "owner": "Dev Malhotra (Growth APM)",
+      "budget": 210000,
+      "spend": 85000,
+      "target_registrations": 2600,
+      "target_attendees": 2100,
+      "impressions": 280000,
+      "clicks": 19000,
+      "reach": 120000,
+      "sessions": 18000,
+      "identified_people": 2400,
+      "registrations": 1620,
+      "attendees": 1280,
+      "cpr": 52.47,
+      "cpa": 66.41,
+      "show_up_rate": 79.0,
+      "status": "active",
+      "start_date": "2027-01-15",
+      "end_date": "2027-03-14",
+      "objective": "Group ticketing (Buy 4 Get 1 Free) + \u20b9100 post-check-in food coupons to incentivize viral squad attendance.",
+      "target_audience": "Friend groups and student circles across Delhi NCR"
+    },
+    {
+      "id": "DIL-04",
+      "name": "Performance Retargeting (Meta & Search)",
+      "channel": "Paid Media",
+      "owner": "Arjun Verma (Performance Lead)",
+      "budget": 210000,
+      "spend": 130000,
+      "target_registrations": 1800,
+      "target_attendees": 1400,
+      "impressions": 650000,
+      "clicks": 31000,
+      "reach": 220000,
+      "sessions": 26000,
+      "identified_people": 2100,
+      "registrations": 1250,
+      "attendees": 810,
+      "cpr": 104.0,
+      "cpa": 160.49,
+      "show_up_rate": 64.8,
+      "status": "active",
+      "start_date": "2027-02-01",
+      "end_date": "2027-03-14",
+      "objective": "High-intent retargeting on Instagram & Google for landing page visitors and cart abandoners.",
+      "target_audience": "Students who visited festival portal or engaged with ambassador posts"
+    },
+    {
+      "id": "DIL-05",
+      "name": "Campus Micro-Creator Guilds",
+      "channel": "Creator Affiliates",
+      "owner": "Nisha Rao (Creator Lead)",
+      "budget": 140000,
+      "spend": 65000,
+      "target_registrations": 1100,
+      "target_attendees": 800,
+      "impressions": 310000,
+      "clicks": 14000,
+      "reach": 110000,
+      "sessions": 12000,
+      "identified_people": 1200,
+      "registrations": 620,
+      "attendees": 410,
+      "cpr": 104.84,
+      "cpa": 158.54,
+      "show_up_rate": 66.1,
+      "status": "active",
+      "start_date": "2027-02-01",
+      "end_date": "2027-03-14",
+      "objective": "30 Delhi college student vloggers & meme pages on affiliate revenue-share for verified ticket conversions.",
+      "target_audience": "Delhi college students following local campus content creators"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-101",
+      "title": "Recruit 30 additional North Campus ambassadors",
+      "owner": "Meera Iyer",
+      "deadline": "2027-02-15",
+      "priority": "High",
+      "status": "In Progress",
+      "campaign_id": "DIL-01",
+      "campaign_name": "Campus Ambassador Guilds",
+      "notes": "Focus on Hindu, Hansraj, Kirori Mal, and Ramjas to reach ambassador quota."
+    },
+    {
+      "id": "TASK-102",
+      "title": "Confirm 15 dance and music society slots for Squad Battles",
+      "owner": "Rohan Khanna",
+      "deadline": "2027-02-20",
+      "priority": "High",
+      "status": "Pending",
+      "campaign_id": "DIL-02",
+      "campaign_name": "Inter-College Squad Battles",
+      "notes": "Finalize participation contracts requiring 30 supporter squad check-ins."
+    },
+    {
+      "id": "TASK-103",
+      "title": "Launch \"Buy 4 Get 1 Free\" Gang of 5 Pass portal integration",
+      "owner": "Dev Malhotra",
+      "deadline": "2027-02-10",
+      "priority": "Medium",
+      "status": "Completed",
+      "campaign_id": "DIL-03",
+      "campaign_name": "Viral \"Gang of 5\" Passes & Referrals",
+      "notes": "Generate unique squad referral links and integrate post-check-in food coupons."
+    },
+    {
+      "id": "TASK-104",
+      "title": "Pause non-retargeting broad Meta ad sets",
+      "owner": "Arjun Verma",
+      "deadline": "2027-02-08",
+      "priority": "High",
+      "status": "Completed",
+      "campaign_id": "DIL-04",
+      "campaign_name": "Performance Retargeting",
+      "notes": "Eliminate broad interest targeting; restrict ad budget strictly to website visitors."
+    },
+    {
+      "id": "TASK-105",
+      "title": "Audit micro-creator affiliate link conversion rates",
+      "owner": "Nisha Rao",
+      "deadline": "2027-02-25",
+      "priority": "Medium",
+      "status": "In Progress",
+      "campaign_id": "DIL-05",
+      "campaign_name": "Campus Micro-Creator Guilds",
+      "notes": "Cut creators with fewer than 5 attributed conversions and reallocate spend."
+    }
+  ]
+}
