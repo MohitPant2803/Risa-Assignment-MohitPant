@@ -166,35 +166,35 @@ export default function AiAnalyst({
   const isLLMActive = isGroqActive || isGeminiActive;
 
   return (
-    <div className="h-[780px] flex flex-col bg-[#FFFFFF] border border-[#E4E7EC] rounded-xl overflow-hidden shadow-sm">
-      {/* Copilot Header */}
-      <div className="px-5 py-4 bg-[#FFFFFF] border-b border-[#E4E7EC] flex justify-between items-center">
+    <div className="h-[780px] flex flex-col bg-[#FFFFFF] border border-[#E4E7EC] rounded-xl overflow-hidden shadow-xs">
+      {/* 1. Sleek Copilot Header (Reduced padding) */}
+      <div className="px-5 py-3 bg-[#FFFFFF] border-b border-[#E4E7EC] flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center">
+          <div className="w-8 h-8 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center shrink-0">
             <Sparkles className="w-4 h-4" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="text-[16px] font-semibold text-[#172033]">AI Growth Analyst & Copilot</h3>
+              <h3 className="text-[15px] font-semibold text-[#172033]">AI Growth Analyst & Copilot</h3>
               {isGroqActive ? (
-                <span className="text-[11px] font-mono text-[#28745D] bg-[#EAF3F0] px-2 py-0.5 rounded font-medium flex items-center gap-1.5 border border-[#28745D]/20">
+                <span className="text-[10.5px] font-mono text-[#28745D] bg-[#EAF3F0] px-2 py-0.5 rounded font-medium flex items-center gap-1.5 border border-[#28745D]/20">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#28745D] animate-pulse" />
-                  ⚡ Groq LPU Live (Qwen-3.8 / GPT-OSS)
+                  ⚡ Groq LPU Live
                 </span>
               ) : isGeminiActive ? (
-                <span className="text-[11px] font-mono text-[#28745D] bg-[#EAF3F0] px-2 py-0.5 rounded font-medium flex items-center gap-1.5 border border-[#28745D]/20">
+                <span className="text-[10.5px] font-mono text-[#28745D] bg-[#EAF3F0] px-2 py-0.5 rounded font-medium flex items-center gap-1.5 border border-[#28745D]/20">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#28745D] animate-pulse" />
-                  Gemini 2.5 Flash Live
+                  Gemini 2.5 Flash
                 </span>
               ) : (
-                <span className="text-[11px] font-mono text-[#315B7D] bg-[#EBF0F5] px-2 py-0.5 rounded font-medium flex items-center gap-1">
-                  <Cpu className="w-3 h-3 text-[#315B7D]" /> Embedded Telemetry Engine
+                <span className="text-[10.5px] font-mono text-[#315B7D] bg-[#EBF0F5] px-2 py-0.5 rounded font-medium flex items-center gap-1">
+                  <Cpu className="w-3 h-3 text-[#315B7D]" /> Embedded Telemetry
                 </span>
               )}
             </div>
-            <p className="text-[12px] text-[#667085]">
+            <p className="text-[11.5px] text-[#667085]">
               {isGroqActive
-                ? 'High-speed cloud inference on Groq LPUs (~200ms latency) evaluating live event metrics.'
+                ? 'High-speed cloud inference on Groq LPUs (~150ms latency) evaluating live event metrics.'
                 : 'Real-time calculations grounded in current campaigns and task telemetry.'}
             </p>
           </div>
@@ -205,15 +205,15 @@ export default function AiAnalyst({
             setKeyInput(apiKey);
             setShowSettings(!showSettings);
           }}
-          className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-[12px] font-medium transition cursor-pointer ${
+          className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border text-[11.5px] font-medium transition cursor-pointer ${
             isLLMActive 
               ? 'bg-[#EAF3F0] border-[#28745D]/30 text-[#28745D]' 
               : 'bg-[#F2F4F7] border-[#E4E7EC] text-[#667085] hover:text-[#172033]'
           }`}
           title="Engine Configuration"
         >
-          <Key className="w-3.5 h-3.5" />
-          <span>{isGroqActive ? '⚡ Groq Connected' : isGeminiActive ? 'Gemini API Connected' : 'Configure LLM'}</span>
+          <Key className="w-3 h-3" />
+          <span>{isGroqActive ? '⚡ Groq Connected' : isGeminiActive ? 'Gemini Connected' : 'Configure LLM'}</span>
         </button>
       </div>
 
@@ -234,7 +234,7 @@ export default function AiAnalyst({
           <div className="flex gap-2">
             <input
               type="password"
-              placeholder="Paste Groq (gsk_...) or Gemini (AIzaSy...) key"
+              placeholder="Paste Groq or Gemini key"
               value={keyInput}
               onChange={(e) => setKeyInput(e.target.value)}
               className="flex-1 bg-[#FFFFFF] border border-[#D0D5DD] rounded-lg px-3 py-1.5 text-[#172033] font-mono text-[12px] focus:outline-none focus:border-[#315B7D]"
@@ -248,7 +248,7 @@ export default function AiAnalyst({
             <button
               onClick={handleRestoreDefaultGroq}
               className="px-3 py-1.5 rounded-lg bg-[#FFFFFF] hover:bg-[#F2F4F7] text-[#315B7D] border border-[#E4E7EC] font-medium text-[12px] cursor-pointer"
-              title="Restore user-provided Groq Key"
+              title="Restore environment Groq Key"
             >
               Reset Groq
             </button>
@@ -264,37 +264,37 @@ export default function AiAnalyst({
         </div>
       )}
 
-      {/* Preset Action Chips */}
-      <div className="px-5 py-2.5 bg-[#F9FAFB] border-b border-[#E4E7EC] flex items-center gap-2 overflow-x-auto">
-        <span className="text-[11px] font-medium text-[#667085] uppercase shrink-0">Prompts:</span>
+      {/* 2. Sleek Prompt Suggestions (Reduced padding & single clean row) */}
+      <div className="px-5 py-2 bg-[#F9FAFB] border-b border-[#E4E7EC] flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+        <span className="text-[10.5px] font-semibold text-[#667085] uppercase tracking-wider shrink-0 pr-1">Prompts:</span>
         {quickPrompts.map((qp, i) => (
           <button
             key={i}
             onClick={() => handleSend(qp.prompt)}
-            className="shrink-0 text-[12px] px-3 py-1 rounded-md bg-[#FFFFFF] hover:bg-[#F2F4F7] text-[#172033] border border-[#E4E7EC] transition cursor-pointer font-medium"
+            className="shrink-0 text-[11.5px] px-2.5 py-1 rounded-md bg-[#FFFFFF] hover:bg-[#F2F4F7] text-[#344054] border border-[#E4E7EC] transition cursor-pointer font-medium shadow-2xs whitespace-nowrap"
           >
             {qp.label}
           </button>
         ))}
       </div>
 
-      {/* Chat Messages Viewport */}
-      <div className="flex-1 overflow-y-auto p-5 space-y-4 bg-[#FDFDFD]">
+      {/* 3. Chat Messages Viewport (More whitespace, reduced clutter) */}
+      <div className="flex-1 overflow-y-auto p-6 space-y-5 bg-[#FFFFFF]">
         {messages.map((msg) => (
           <div
             key={msg.id}
             className={`flex gap-3 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             {msg.sender === 'ai' && (
-              <div className="w-8 h-8 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center shrink-0 mt-0.5">
-                <Bot className="w-4 h-4" />
+              <div className="w-7 h-7 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center shrink-0 mt-0.5">
+                <Bot className="w-3.5 h-3.5" />
               </div>
             )}
 
             <div className={`max-w-2xl rounded-xl p-4 text-[13px] leading-relaxed ${
               msg.sender === 'user'
                 ? 'bg-[#315B7D] text-white rounded-br-none shadow-xs font-normal'
-                : 'bg-[#F9FAFB] border border-[#E4E7EC] text-[#172033] rounded-bl-none shadow-xs'
+                : 'bg-[#F9FAFB] border border-[#E4E7EC]/70 text-[#172033] rounded-tl-sm'
             }`}>
               <div className="leading-relaxed">
                 <FormattedMessage text={msg.text} isUser={msg.sender === 'user'} />
@@ -302,54 +302,55 @@ export default function AiAnalyst({
 
               {/* Proposed Task Card */}
               {msg.proposedTask && (
-                <div className="mt-4 p-4 rounded-lg bg-[#FFFFFF] border border-[#D0D5DD] shadow-sm">
-                  <div className="flex items-center justify-between mb-2 pb-2 border-b border-[#E4E7EC]">
-                    <span className="flex items-center gap-1.5 font-medium text-[#315B7D] text-[11px] uppercase tracking-wide">
-                      <Zap className="w-3.5 h-3.5 text-[#315B7D]" />
-                      Proposed Execution Task
+                <div className="mt-3.5 p-3.5 rounded-lg bg-[#FFFFFF] border border-[#E4E7EC] shadow-2xs">
+                  <div className="flex items-center justify-between mb-2 pb-1.5 border-b border-[#F2F4F7]">
+                    <span className="flex items-center gap-1.5 font-medium text-[#315B7D] text-[11px] uppercase tracking-wider">
+                      <Zap className="w-3 h-3 text-[#315B7D]" />
+                      Proposed Action
                     </span>
-                    <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-[#FFF4E5] text-[#A15C00]">
+                    <span className="text-[10.5px] font-medium px-2 py-0.5 rounded-full bg-[#FFF4E5] text-[#A15C00]">
                       {msg.proposedTask.priority} Priority
                     </span>
                   </div>
 
-                  <div className="font-semibold text-[#172033] text-[14px] mb-1">
+                  <div className="font-semibold text-[#172033] text-[13.5px] mb-1">
                     {msg.proposedTask.title}
                   </div>
-                  <div className="text-[12px] text-[#667085] mb-3">
+                  <div className="text-[12px] text-[#667085] mb-2.5 leading-normal">
                     {msg.proposedTask.notes}
                   </div>
 
-                  <div className="grid grid-cols-2 gap-2 text-[11px] text-[#667085] font-mono mb-3 bg-[#F9FAFB] p-2.5 rounded border border-[#E4E7EC]">
-                    <div>Owner: <strong className="text-[#172033] font-sans font-medium">{msg.proposedTask.owner}</strong></div>
+                  <div className="flex items-center gap-4 text-[11px] text-[#667085] mb-3 bg-[#F9FAFB] px-3 py-2 rounded-md border border-[#E4E7EC]/60">
+                    <div>Owner: <strong className="text-[#172033] font-medium">{msg.proposedTask.owner}</strong></div>
+                    <span className="text-[#D0D5DD]">•</span>
                     <div>Deadline: <strong className="text-[#172033] font-medium">{msg.proposedTask.deadline}</strong></div>
                   </div>
 
                   {msg.taskApproved ? (
-                    <div className="flex items-center justify-center gap-2 py-2 px-3 rounded-md bg-[#EAF3F0] text-[#28745D] font-medium text-[12px]">
-                      <CheckCircle2 className="w-4 h-4" />
-                      Task Approved & Added to Task Manager
+                    <div className="flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-md bg-[#EAF3F0] text-[#28745D] font-medium text-[12px] border border-[#28745D]/20">
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      Task Approved & Dispatched
                     </div>
                   ) : (
                     <button
                       onClick={() => handleApprove(msg.id, msg.proposedTask)}
-                      className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-md bg-[#315B7D] hover:bg-[#274B68] text-white font-medium text-[12px] transition cursor-pointer"
+                      className="w-full flex items-center justify-center gap-1.5 py-2 px-3 rounded-md bg-[#315B7D] hover:bg-[#274B68] text-white font-medium text-[12px] transition cursor-pointer shadow-xs"
                     >
-                      <CheckCircle2 className="w-4 h-4" />
+                      <CheckCircle2 className="w-3.5 h-3.5" />
                       Approve & Create Task in Task Manager
                     </button>
                   )}
                 </div>
               )}
 
-              <div className="mt-2 text-[11px] text-[#98A2B3] text-right font-mono">
+              <div className="mt-2 text-[10.5px] text-[#98A2B3] text-right font-mono">
                 {msg.timestamp}
               </div>
             </div>
 
             {msg.sender === 'user' && (
-              <div className="w-8 h-8 rounded-lg bg-[#E4E7EC] text-[#475467] flex items-center justify-center shrink-0 mt-0.5">
-                <User className="w-4 h-4" />
+              <div className="w-7 h-7 rounded-lg bg-[#E4E7EC] text-[#475467] flex items-center justify-center shrink-0 mt-0.5">
+                <User className="w-3.5 h-3.5" />
               </div>
             )}
           </div>
@@ -357,12 +358,12 @@ export default function AiAnalyst({
 
         {isTyping && (
           <div className="flex gap-3 items-center">
-            <div className="w-8 h-8 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center shrink-0">
-              <Bot className="w-4 h-4" />
+            <div className="w-7 h-7 rounded-lg bg-[#EBF0F5] text-[#315B7D] flex items-center justify-center shrink-0">
+              <Bot className="w-3.5 h-3.5" />
             </div>
-            <div className="bg-[#F9FAFB] border border-[#E4E7EC] rounded-xl rounded-bl-none px-4 py-2 text-[12px] text-[#667085] flex items-center gap-2 font-mono">
+            <div className="bg-[#F9FAFB] border border-[#E4E7EC]/70 rounded-xl rounded-bl-none px-3.5 py-2 text-[12px] text-[#667085] flex items-center gap-2 font-mono">
               <span className="w-1.5 h-1.5 rounded-full bg-[#315B7D] animate-ping" />
-              {isGeminiActive ? "Calling Google Gemini 2.5 Flash model..." : "Analyzing live telemetry across campaigns and tasks..."}
+              {isGeminiActive ? "Calling Google Gemini 2.5 Flash..." : "Evaluating live telemetry via Groq LPUs..."}
             </div>
           </div>
         )}
@@ -370,7 +371,7 @@ export default function AiAnalyst({
       </div>
 
       {/* Input Form */}
-      <div className="p-4 bg-[#FFFFFF] border-t border-[#E4E7EC]">
+      <div className="px-5 py-3 bg-[#FFFFFF] border-t border-[#E4E7EC]">
         <form
           onSubmit={(e) => { e.preventDefault(); handleSend(); }}
           className="flex items-center gap-2.5"
@@ -380,14 +381,14 @@ export default function AiAnalyst({
             placeholder="Ask anything: 'Compare Meera and Arjun', 'What is the spend on C01?', 'What tasks are pending?'..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            className="flex-1 bg-[#FFFFFF] border border-[#D0D5DD] rounded-lg px-4 py-2.5 text-[13px] text-[#172033] placeholder:text-[#98A2B3] focus:outline-none focus:border-[#315B7D]"
+            className="flex-1 bg-[#F9FAFB] border border-[#D0D5DD] rounded-lg px-3.5 py-2 text-[13px] text-[#172033] placeholder:text-[#98A2B3] focus:bg-[#FFFFFF] focus:outline-none focus:border-[#315B7D] transition"
           />
           <button
             type="submit"
             disabled={!input.trim()}
-            className="p-2.5 rounded-lg bg-[#315B7D] hover:bg-[#274B68] disabled:opacity-40 text-white transition cursor-pointer"
+            className="p-2 rounded-lg bg-[#315B7D] hover:bg-[#274B68] disabled:opacity-40 text-white transition cursor-pointer shadow-xs"
           >
-            <Send className="w-4 h-4" />
+            <Send className="w-3.5 h-3.5" />
           </button>
         </form>
       </div>
