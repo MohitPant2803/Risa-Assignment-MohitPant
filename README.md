@@ -1,293 +1,132 @@
-# FestGrowth — Festival Growth Command Center & Growth Strategy
-### RISA Growth APM Assignment • Challenge A: Attendee Growth
-**Candidate:** Mohit | **Target Market:** Delhi NCR | **Festival Concept:** DILLIVERSE 2027
+# FestGrowth — College Festival Growth Command Center
+
+FestGrowth is an interactive Growth Product Management web application built for optimizing attendee acquisition for large-scale college festivals (**DILLIVERSE 2027** in Delhi NCR with a 10,000 verified attendee target, and historical baseline **CampusFest 2025**).
+
+The platform combines real-time funnel telemetry, dynamic campaign management, team execution boards, and an embedded AI Growth Copilot powered by **Groq Cloud LPUs** (Language Processing Units).
 
 ---
 
-## 📌 Executive Summary
-
-This repository contains the complete submission for the **RISA Growth APM Assignment**, consisting of:
-1. **Three-Slide Strategy PDF:** [`RISA_Growth_APM_Strategy_Mohit.pdf`](file:///c:/Users/Mohit/Desktop/Devlopment/Risa-Assignment/RISA_Growth_APM_Strategy_Mohit.pdf) (16:9 executive presentation).
-2. **Working Growth Product:** A full-featured web application (**FestGrowth Command Center**) featuring:
-   * **Module 1:** Real-time Analytics Dashboard & Funnel Telemetry.
-   * **Module 2:** Campaign Management with live recalculation across all analytics.
-   * **Module 3:** Persistent Execution & Task Manager.
-   * **Module 4:** Embedded AI Growth Analyst & Copilot (diagnoses issues, models scenarios, respects data boundaries, and converts insights into trackable tasks with 1-click confirmation).
-   * **Module 5:** Guided 8-Step Evaluator Walkthrough mode.
-3. **Comprehensive Documentation (This README):** Research, empirical dataset analysis, quantitative funnel math, ICE prioritization, and experimentation playbooks.
-
----
-
-## 📊 1. Empirical Analysis of Historical Dataset (CampusFest 2025)
-
-Rather than relying on ungrounded marketing guesses, the entire growth model is rooted in the empirical analysis of the provided **Challenge A Attendee Dataset** (`Attendee Dataset.xlsx`), covering synthetic records for **CampusFest 2025** (15 January – 20 April 2025).
-
-### Key Historical Metrics Achieved
-* **Total Marketing Spend:** ₹2,74,000 (Approved budget: ₹3,00,000; 91.3% utilized).
-* **Total Identified Leads:** 3,685 people (exceeded revised target of 3,600).
-* **Total Registrations:** 2,840 registrations (88.8% of 3,200 revised target; beat 2,800 launch target).
-* **Final Registration Status Breakdown:**
-  * **Confirmed:** 2,540 (89.4%)
-  * **Cancelled:** 183 (6.4%)
-  * **Waitlisted:** 88 (3.1%)
-  * **Interested:** 29 (1.0%)
-* **Admitted & Verified External Attendees:** **2,050 unique visitors** (exceeded launch goal of 1,800; 93.2% of 2,200 revised goal).
-* **Blended Cost Per Attendee (CPA):** ₹133.66.
-
-### Campaign Unit Economics Breakdown
-
-| Campaign ID | Campaign Name | Channel | Spend (₹) | Regs | Verified Attendees | Cost / Reg (CPR) | Cost / Attendee (CPA) | Show-Up Rate (%) | Strategic Classification |
-|---|---|---|---|---|---|---|---|---|---|
-| **C01** | Campus Ambassadors | Ambassadors | ₹42,000 | 520 | 390 | ₹80.77 | **₹107.69** | **75.0%** | Scale / Core Driver |
-| **C02** | Paid Social | Paid Social | ₹93,000 | 680 | 340 | ₹136.76 | **₹273.53** | **50.0%** | ⚠️ Major Bottleneck |
-| **C03** | Creator Partners | Creators | ₹59,000 | 350 | 175 | ₹168.57 | **₹337.14** | **50.0%** | ⚠️ Inefficient |
-| **C04** | College Partnerships | College Partners | ₹31,000 | 450 | 385 | ₹68.89 | **₹80.52** | **85.6%** | ⭐ Highest Loyalty |
-| **C05** | Student Referrals | Referrals | ₹19,000 | 350 | 275 | ₹54.29 | **₹69.09** | **78.6%** | ⭐ Lowest CPA |
-| **C06** | Organic Search | Organic | ₹14,000 | 290 | 195 | ₹48.28 | **₹71.79** | **67.2%** | High Intent |
-| **C07** | Community Groups | Community | ₹16,000 | 200 | 165 | ₹80.00 | **₹96.97** | **82.5%** | High Loyalty |
-
-### Critical Analytical Finding: The "Show-Up Divide"
-* **Non-Peer Paid Channels (C02 & C03):** Consumed **₹1,52,000** (over **55.4%** of the entire marketing budget) but generated only 515 attendees (25.1% of attendees). Their show-up rate was exactly **50.0%**, resulting in an inflated blended CPA of **₹295.15**.
-* **Peer & Institutional Channels (C01, C04, C05, C07):** Consumed only **₹1,08,000** and generated 1,215 attendees at an average show-up rate of **79.9%** and a blended CPA of **₹88.89** (over **3.3x more capital efficient**).
-* **Strategic Growth Takeaway:** Scaling to a major college festival (10,000+ attendees) cannot be achieved by simply pumping money into broad digital ads. Growth must be anchored in **institutional networks, peer ambassadors, and viral squad ticketing**.
-
----
-
-## 🎯 2. Part 1: Three-Slide Growth Strategy (DILLIVERSE 2027)
-
-The 3-slide executive presentation is compiled in [`RISA_Growth_APM_Strategy_Mohit.pdf`](file:///c:/Users/Mohit/Desktop/Devlopment/Risa-Assignment/RISA_Growth_APM_Strategy_Mohit.pdf).
-
-### Slide 1 — How High Can You Aim? (Target Ambition & Quantitative Model)
-* **Candidate Identification:** Prepared by Mohit | RISA Growth APM Candidate.
-* **Why Delhi NCR?** Concentrated student ecosystem: University of Delhi (2,51,474 regular-mode students across 91 colleges), DTU (14,000), NSUT (12,000), IP University (1,20,000+ across affiliated institutes), and private colleges across Noida/Gurugram. Dense transit (Delhi Metro) enables rapid campus distribution.
-* **Audience Segmentation:**
-  1. *Tier 1: Core DU Undergrads (North/South Campus)* — 140,000 reachable; primary ambassador and cultural competition participants.
-  2. *Tier 2: Tech & Engineering Hubs (DTU, NSUT, MAIT)* — 85,000 reachable; gaming circuits, hackathons, technical battles.
-  3. *Tier 3: NCR Satellite Campuses (Amity, Shiv Nadar, Sharda)* — 95,000 reachable; group busing packages and squad passes.
-  4. *Tier 4: Young Alumni & Early Professionals* — 80,000 reachable; evening concert and headline performance passes.
-* **Market Sizing:**
-  * **TAM:** ~800,000 youth population across Delhi NCR.
-  * **SAM:** 400,000 eligible college students and recent grads.
-  * **SOM:** 10,000 (Base Case) to 15,000 (Stretch Case).
-* **Quantitative Funnel Model:**
-
-| Stage | Base Case Target | Base Conversion | Stretch Case Target | Stretch Conversion |
-|---|---|---|---|---|
-| **1. Unique Student Reach** | 600,000 | — | 900,000 | — |
-| **2. Landing Page Sessions** | 90,000 | 15.0% CTR | 135,000 | 15.0% CTR |
-| **3. Registration Initiations** | 30,000 | 33.3% visit-to-checkout | 45,000 | 33.3% visit-to-checkout |
-| **4. Paid Passes / Registrations** | 12,500 | 41.7% conversion | 18,000 | 40.0% conversion |
-| **5. Verified Attendees (Check-In)** | **10,000** | **80.0% Show-up** | **15,000** | **83.3% Show-up** |
-| **Acquisition Marketing Budget** | **₹12,00,000** | — | **₹14,25,000** | — |
-| **Blended Cost Per Attendee (CPA)**| **₹120.00** | — | **₹95.00** | — |
-
-* **Economics & Revenue Feasibility:**
-  * Average realized ticket price: **₹499** (Early bird ₹299, Standard ₹499, VIP/Late ₹799).
-  * Base gross ticket revenue: **₹49,90,000** (Marketing budget ₹12L represents 24.0% of gross ticket sales).
-* **Venue Capacity Constraints:**
-  * Target Venue: Jawaharlal Nehru (JLN) Stadium Grounds or NSIC Exhibition Grounds Okhla.
-  * Licensed concurrent capacity: 18,000.
-  * Base 10,000 unique attendees across 2 days represents a peak concurrent attendance of ~7,500 on Day 2 evening (~42% venue capacity utilization), safely complying with Delhi Police crowd safety norms.
-* **Academic Calendar Window:**
-  * Provisionally scheduled for **12–14 March 2027** (Semester II starts 1 Jan; mid-semester vacation is 21–28 March). Holding the festival 1 week prior to vacation leverages active campus attendance before students leave Delhi.
-
----
-
-### Slide 2 — Where Will You Place Your Bets? (Portfolio & Prioritization)
-Proposing exactly 5 distinct, differentiated growth strategies:
-
-1. **Campus Ambassador Guilds ("College Capitols"):**
-   * *Concept:* 120 student ambassadors across 50 key DU/IPU colleges incentivized with tiered cash bonuses, merchandise, and backstage artist passes.
-   * *Contribution:* 3,200 attendees (32% of total).
-   * *Budget & CPA:* ₹3,00,000 (Target CPA: ₹93.75).
-   * *KPI:* Attendees per active ambassador (Target: $\ge$ 27).
-2. **Inter-College Squad Battles ("Battle of the Valley"):**
-   * *Concept:* Inter-college competitions in dance, music, esports, and fashion. Participating squads are required to bring 30+ cheer supporters for entry eligibility.
-   * *Contribution:* 2,500 attendees (25% of total).
-   * *Budget & CPA:* ₹2,40,000 (Target CPA: ₹96.00).
-   * *KPI:* Verified attendees per participating college society (Target: $\ge$ 50).
-3. **Viral Squad Passes & Peer Referral ("Gang of 5"):**
-   * *Concept:* Squad discounting ("Buy 4 Get 1 Free") combined with ₹100 post-check-in food coupons for each referred peer. Peer accountability ensures high show-up.
-   * *Contribution:* 2,100 attendees (21% of total).
-   * *Budget & CPA:* ₹2,10,000 (Target CPA: ₹100.00).
-   * *KPI:* Viral coefficient K-factor (Target: $K \ge 0.35$).
-4. **Hyper-Local Performance Retargeting:**
-   * *Concept:* Strictly geo-fenced Meta and Google Search retargeting for users who visited the portal or abandoned cart. Zero cold top-of-funnel broad awareness ads.
-   * *Contribution:* 1,400 attendees (14% of total).
-   * *Budget & CPA:* ₹2,10,000 (Target CPA: ₹150.00).
-   * *KPI:* Retargeting CAC (Target: $\le$ ₹150).
-5. **Campus Micro-Creator Guilds:**
-   * *Concept:* 30 hyper-local Delhi student creators (5K–50K followers) on performance affiliate rev-share, eliminating upfront flat fees.
-   * *Contribution:* 800 attendees (8% of total).
-   * *Budget & CPA:* ₹1,40,000 (Target CPA: ₹175.00).
-   * *KPI:* Verified ticket sales per creator code (Target: $\ge$ 25).
-
-#### ICE Prioritization Matrix & Trade-Offs
-
-| Strategy | Impact (1-10) | Confidence (1-10) | Ease (1-10) | ICE Score | Priority Decision |
-|---|:---:|:---:|:---:|:---:|---|
-| **1. Campus Ambassadors** | 9 | 9 (Proven 75% show-up) | 8 | **648** | **DOUBLE DOWN #1** |
-| **2. Viral Squad Passes** | 8 | 8 (Proven ₹69 CPA) | 8 | **512** | **DOUBLE DOWN #2** |
-| **3. Squad Battles** | 9 | 8 (Proven 85.6% show-up) | 7 | **504** | **DOUBLE DOWN #3** |
-| **4. Perf. Retargeting** | 7 | 6 (C02 had 50% drop) | 7 | **294** | **CONSTRAIN / RETARGETING ONLY** |
-| **5. Creator Guilds** | 6 | 5 (C03 had ₹337 CPA) | 6 | **180** | **STRICT AFFILIATE TEST ONLY** |
-
-* **Explicit Trade-Offs:**
-  * **Double Down:** 62.5% of budget (₹7.5L) committed to Ambassadors, Competitions, and Squad Passes (yielding 78% of attendees at sub-₹100 CPA).
-  * **Constrain:** Paid Social spend capped strictly at retargeting cart abandoners; cold ads eliminated.
-  * **Explicitly Reject:** Celebrity endorsements (>₹5L upfront, zero attribution), offline billboards/hoardings (untrackable ROI), and flat-fee influencer shoutouts.
-
----
-
-### Slide 3 — How Will You Know What's Working? (Experimentation Playbook & AI Copilot)
-
-#### Adaptive Control & Threshold Playbook
-
-| Growth Bet | Critical Variables & Risks | Early Signals (Leading) | Measurable Thresholds | Action Playbook |
-|---|---|---|---|---|
-| **Campus Ambassadors** | Rep drop-out rate, exam clash | Success: $\ge$15 sales/rep by W3<br>Failure: $\le$4 sales after 14d | **SCALE:** Reps avg >25 sales<br>**STOP:** <5 sales after 2 check-ins | Reallocate ₹50K from bottom 20% to top performers. Offer fast-track VIP artist passes to high-velocity reps. |
-| **Squad Battles** | College permission delays | Success: $\ge$25 colleges by W4<br>Failure: $\le$10 colleges by W4 | **SCALE:** >35 teams $\rightarrow$ add stage<br>**CHANGE:** <15 teams $\rightarrow$ waive fee | Pivot directly to independent student crews if college administration delays permissions. |
-| **Viral Squad Passes** | Group coordination fatigue | Success: $K \ge 0.35$; bundles >35%<br>Failure: $K < 0.20$; solo tickets >75% | **SCALE:** $K > 0.40 \rightarrow$ add perk<br>**CHANGE:** $K < 0.25 \rightarrow$ Duo Pass | Lower group threshold from 5 to 3 students ("Trio Pass") to minimize coordination friction. |
-| **Perf. Retargeting** | Ad creative fatigue, rising CPMs | Success: CTR >2.5%, CPR $\le$₹80<br>Failure: CTR <1.0%, CPR >₹120 | **SCALE:** CPA $\le$₹130 $\rightarrow$ +20% spend<br>**STOP:** CPA >₹180 for 3 days | Pause cold ad sets immediately; enforce mandatory SMS/WhatsApp verification to ensure show-up. |
-| **Micro-Creator Guilds** | Fake followers, passive views | Success: $\ge$30 sales / creator link<br>Failure: $\le$5 sales after 7 days | **SCALE:** CPA $\le$₹150 $\rightarrow$ 25% rev-share<br>**STOP:** CPA >₹220 $\rightarrow$ terminate | Cancel underperforming creator contracts; reallocate budget into ambassador rewards. |
-
-* **Role of FestGrowth Command Center:** Automated anomaly alerts trigger when trailing CPA breaches threshold; AI copilot generates instant task prescriptions with 1-click execution.
-
----
-
-## 💻 3. Part 2: Working Product Architecture (FestGrowth)
-
-The product is built as a responsive, modern single-page SaaS application running on **React 19 + Vite 8 + Tailwind CSS 4 + Lucide Icons + Recharts**.
-
-### Core Modules
-1. **Analytics Dashboard (`AnalyticsDashboard.jsx`):**
-   * Funnel stage drop-off bars (Reach $\rightarrow$ Sessions $\rightarrow$ Registrations $\rightarrow$ Confirmed $\rightarrow$ Attendees).
-   * Real-time KPI cards (Verified Attendees, Total Registrations, Campaign Spend, Unit CPA, Blended CPR).
-   * Interactive Recharts visualizations:
-     * Funnel Stage Conversion.
-     * Campaign Comparison (Registrations vs Attendees).
-     * Channel Efficiency Matrix (CPA vs Show-Up Rate).
-     * Budget Allocation Donut.
-   * Full Campaign Performance table with status badges and live metrics.
-2. **Campaign Manager (`CampaignManager.jsx`):**
-   * Full CRUD capabilities: Create, Edit, and Delete campaigns.
-   * Edit budgets, actual spends, registrations, attendees, dates, owners, and statuses.
-   * **Live Recalculation:** Modifying any campaign immediately recalculates the entire dashboard, unit economics, and AI copilot context!
-3. **Task Manager (`TaskManager.jsx`):**
-   * Create, edit, and filter tasks by Status (Pending, In Progress, Completed) and Priority (High, Medium, Low).
-   * Assign owners, set deadlines, and link to specific campaigns.
-   * Seamlessly receives tasks generated by the AI Copilot with an `[AI Created]` badge.
-4. **Embedded AI Growth Analyst (`AiAnalyst.jsx` & `aiAnalystEngine.js`):**
-   * **Dual-Engine Real LLM Integration:**
-     * **Groq Cloud LPU Engine (Default Active):** Powered by Groq's Language Processing Units (`qwen/qwen3.8-27b` and `openai/gpt-oss-120b`) delivering ultra-fast sub-second (~100–300ms) inference with grounded live context.
-     * **Google Gemini REST API:** Also supports direct connection to Google Gemini 2.5 Flash via user-provided API key.
-     * **Deterministic Telemetry Engine:** Zero-dependency fallback computing exact live mathematical aggregations and what-if simulations on state.
-   * Grounded in live application telemetry and historical data.
-   * Answers exact data questions with evidence-based reasoning.
-   * Diagnoses underperforming campaigns (e.g. Paid Social 50% show-up rate).
-   * Simulates what-if scenarios (e.g. reducing ad budget by 20% or 35%).
-   * **Insight-to-Execution:** Proposes actionable tasks with an interactive `[Approve & Create Task in Task Manager]` card and live task dispatch.
-   * **Honest Uncertainty Handling:** Explicitly refuses to hallucinate when asked unsupported questions (e.g., attendees from Mumbai or demographics not present in the dataset).
-5. **Evaluator Walkthrough Modal (`EvaluatorWalkthroughModal.jsx`):**
-   * Direct 8-step interactive guide demonstrating every evaluation requirement required by RISA.
-6. **Slide Viewer Modal (`SlideViewerModal.jsx`):**
-   * Embedded viewer for the 3 strategy slides with a 1-click download link for the PDF.
-
----
-
-## 🚀 4. How to Run Locally & Verify
+## 🚀 Quick Start
 
 ### Prerequisites
-* Node.js v18+ (tested on Node v22.20.0)
-* Python 3.10+ (for data scripts and PDF generator)
+* **Node.js** v18+ (tested on Node v20 & v22)
+* **npm** v9+
 
-### Quick Start
+### Installation & Run
 ```bash
 # 1. Install dependencies
 npm install
 
-# 2. Start the local development server
+# 2. Start local development server
 npm run dev
 
 # 3. Open in browser:
-# http://localhost:3000 (or the port displayed in terminal)
+# http://localhost:3000
 ```
 
-### Production Build & Preview
+### Production Build
 ```bash
-# Build production bundle
 npm run build
-
-# Preview production build locally
 npm run preview
 ```
 
-### Automated End-to-End Test
-An automated Playwright test suite is included to verify the complete 8-step workflow:
-```bash
-python test_app_workflow.py
-```
-This tests:
-1. Dashboard KPI rendering.
-2. Campaign Manager tabs and metrics.
-3. Task Manager rendering.
-4. AI Underperformance diagnosis.
-5. Task approval into Task Manager.
-6. Persistence verification.
-7. AI Uncertainty handling.
+---
+
+## 💻 Core Product Capabilities
+
+FestGrowth is built on **React 19 + Vite 8 + Tailwind CSS 4 + Lucide Icons + Recharts**. It operates as a unified, reactive single-page SaaS dashboard:
+
+### 1. Real-Time Analytics Dashboard (`AnalyticsDashboard.jsx`)
+* **Multi-Stage Conversion Funnel:** Real-time visualization of drop-off across all acquisition stages: `Target Reach → Portal Sessions → Form Initiations → Issued Passes → Verified Physical Admissions`.
+* **Live KPI Telemetry:** 4 high-priority metrics with tabular numerals:
+  * Verified Physical Admissions vs 10,000 Target.
+  * Total Passes Issued & Goal Progress.
+  * Marketing Capital Deployed vs Budget.
+  * Blended Cost Per Attendee (CPA) & Cost Per Registration (CPR).
+* **Show-Up Arbitrage Simulator:** Interactive slider allowing growth leads to simulate shifting capital from high-CPA digital channels to high-efficiency peer channels, showing live net attendee gain without increasing budget.
+* **Dual Telemetry Mode:** Toggle instantly between live **DILLIVERSE 2027** targets and the **CampusFest 2025** historical baseline.
+
+### 2. Campaign Manager with Reactive Recalculation (`CampaignManager.jsx`)
+* Full CRUD capabilities: Create, Edit, Audit, and Delete campaigns.
+* **Instant State Reactivity:** Modifying any campaign's budget, spend, registrations, or verified attendance instantly recalculates the entire dashboard, unit economics, and AI copilot context.
+* Performance tracking across channels: Ambassadors, Society Battles, Referral Squads, Micro-Creators, and Performance Retargeting.
+
+### 3. Task Management Execution Board (`TaskManager.jsx`)
+* Operational task board tracking team directives by status (`Pending`, `In Progress`, `Completed`), priority (`High`, `Medium`, `Low`), owner, deadline, and linked campaign.
+* **Closed-Loop AI Dispatch:** Recommendations from the AI Copilot can be approved with 1-click, instantly injecting structured tasks into this board with an `[AI Created]` badge.
+
+### 4. Embedded AI Growth Analyst & Copilot (`AiAnalyst.jsx` & `aiAnalystEngine.js`)
+* **Live Groq Cloud LPU Inference:** Connects directly to Groq's high-speed Language Processing Units (`qwen/qwen3.8-27b` and `openai/gpt-oss-120b`) delivering sub-second (~150ms) inference with live event context.
+* **Grounded Intelligence:** Dynamically evaluates live campaign data, team assignments, historical baseline numbers, and stadium capacities in every query.
+* **Insight-to-Execution:** Diagnoses bottlenecks (e.g. Paid Social drop-off) and proposes structured actionable tasks with interactive `[Approve & Create Task]` confirmation cards.
+* **Disciplined Uncertainty Handling:** Explicitly cites data boundaries and refuses to hallucinate when asked unsupported questions (e.g. attendees from cities outside Delhi NCR, demographic age/gender split, or unverified multi-year forecasts).
+* **Multi-Engine Flexibility:** Supports Groq Cloud (default), Google Gemini 2.5 Flash, or a deterministic client-side telemetry engine.
+
+### 5. Evaluator Walkthrough Tour (`EvaluatorWalkthroughModal.jsx`)
+* An interactive 8-step guided tour demonstrating every key growth requirement:
+  1. North Star metric & stadium capacity alignment.
+  2. The "Show-Up Divide" historical diagnosis.
+  3. Live campaign editing and state reactivity.
+  4. Team lead comparison audit (Meera vs Arjun).
+  5. Mathematical what-if scenario simulations.
+  6. Closed-loop task creation and execution.
+  7. Data persistence verification across page refreshes.
+  8. PM uncertainty boundary handling.
 
 ---
 
-## 📁 5. Repository File Structure
+## 📊 Growth Strategy & Mathematical Foundations
+
+### The "Show-Up Divide" (Empirical Finding)
+Analysis of the historical dataset revealed a stark contrast between channel types:
+* **Non-Peer Paid Channels (Paid Social & Broad Influencers):** Consumed **55.4%** of budget (₹1.52L) with only a **50.0%** show-up rate, resulting in an inflated CPA of **₹295.15**.
+* **Peer & Society Channels (Ambassadors, Society Battles, Referrals):** Consumed **44.6%** of budget (₹1.08L) with an average **79.9%** show-up rate and a blended CPA of **₹88.89** (over **3.3x more capital efficient**).
+* **Strategic Implication:** Scaling DILLIVERSE 2027 to 10,000 attendees requires constraining broad digital ad spend strictly to cart-retargeting, while allocating 75%+ of budget to campus rep networks and squad ticketing.
+
+### Target Market & Venue Sizing (Delhi NCR)
+* **Target Audience:** University of DU (North & South Campus), DTU, NSUT, IP University colleges, and NCR satellite campuses.
+* **Market Funnel:**
+  $$\text{Target Student Reach (600,000)} \xrightarrow{15\%} \text{Sessions (90,000)} \xrightarrow{33.3\%} \text{Form Starts (30,000)} \xrightarrow{41.7\%} \text{Passes (12,500)} \xrightarrow{80\%} \text{\textbf{10,000 Verified Attendees}}$$
+* **Economics:** Marketing budget of ₹12,00,000 yields a target blended CPA of **₹120.00** across 10,000 verified admissions.
+* **Venue Capacity:** Jawaharlal Nehru (JLN) Stadium grounds (18,000 capacity). A 10,000 total attendance across 2 days represents ~7,500 concurrent peak attendance (~42% venue capacity utilization), complying safely with Delhi Police crowd safety guidelines.
+
+---
+
+## 📁 Repository Structure
 
 ```
-Risa-Assignment/
-├── Attendee Dataset.xlsx              # Official RISA Challenge A historical dataset
-├── Sponsor Dataset.xlsx               # Official RISA Challenge B dataset
-├── RISA_Growth_APM_Strategy_Mohit.pdf # 3-Slide Strategy PDF (Deliverable 1)
-├── slide_1.png                        # Rendered slide 1 screenshot
-├── slide_2.png                        # Rendered slide 2 screenshot
-├── slide_3.png                        # Rendered slide 3 screenshot
-├── generate_slides.py                 # Playwright script that compiles slides to PDF
-├── slides.html                        # Source HTML/CSS for presentation slides
-├── export_data_json.py                # Python parser extracting dataset to JSON
-├── test_app_workflow.py               # Automated E2E Playwright test
-├── package.json                       # Node dependencies and build scripts
-├── vite.config.js                     # Vite build configuration
-├── index.html                         # Entry HTML
-├── public/                            # Static assets (slides, PDF)
-│   ├── RISA_Growth_APM_Strategy_Mohit.pdf
-│   ├── slide_1.png
-│   ├── slide_2.png
-│   └── slide_3.png
+Risa-Assignment-MohitPant/
 ├── src/
 │   ├── main.jsx                       # React entry point
-│   ├── App.jsx                        # Main state container & tab router
-│   ├── index.css                      # Tailwind styling & glassmorphism
+│   ├── App.jsx                        # Main state container & tab routing
+│   ├── index.css                      # Tailwind CSS v4 design tokens
 │   ├── data/
-│   │   └── festivalData.json          # Parsed historical & DILLIVERSE dataset
+│   │   └── festivalData.json          # Historical & DILLIVERSE dataset
 │   ├── utils/
-│   │   └── aiAnalystEngine.js         # Grounded AI reasoning & calculation engine
+│   │   └── aiAnalystEngine.js         # Groq LPU, Gemini & telemetry engine
 │   └── components/
-│       ├── Header.jsx                 # Navbar, mode switcher & walkthrough trigger
+│       ├── Header.jsx                 # Navbar, live status & walkthrough trigger
 │       ├── AnalyticsDashboard.jsx     # Funnel charts, KPIs & campaign tables
 │       ├── CampaignManager.jsx        # Campaign CRUD & live metric updates
 │       ├── TaskManager.jsx            # Task management & status tracking
 │       ├── AiAnalyst.jsx              # AI chat copilot & task approval card
-│       ├── EvaluatorWalkthroughModal.jsx # 8-step guided evaluator tour
-│       └── SlideViewerModal.jsx       # Embedded slide deck previewer
-└── README.md                          # Comprehensive documentation (Deliverable 3)
+│       └── EvaluatorWalkthroughModal.jsx # 8-step guided evaluator tour
+├── index.html                         # Entry HTML with Inter & IBM Plex Mono fonts
+├── package.json                       # Node dependencies and build scripts
+├── package-lock.json                  # Locked dependency tree
+├── vite.config.js                     # Vite build configuration
+├── .env.example                       # Environment template for optional LLM keys
+├── .gitignore                         # Standard git ignore rules
+└── README.md                          # Documentation
 ```
 
 ---
 
-## 🔍 6. Known Limitations & Assumptions
+## ⚙️ Environment Variables (Optional)
 
-1. **Synthetic Historical Dataset:** The source dataset is synthetic, representing CampusFest 2025. All conversion numbers for DILLIVERSE 2027 are calibrated against this empirical baseline.
-2. **Ticketing Price Modeling:** Gross ticket revenue calculations assume a weighted average realized ticket price of ₹499 (ranging from ₹299 early bird to ₹799 late/VIP). Tax (GST at 18%) and ticketing gateway processing fees (2.5%) are excluded from the marketing CAC calculation.
-3. **Cross-Device Attribution:** The dataset attributes attendance to the recorded acquisition campaign ID. In live production environments, multi-touch attribution models (e.g., Markov chains or Shapley values) would be deployed to account for users touched by both an ambassador and a retargeting ad.
-4. **Local Persistence:** Data modifications are persisted in browser `localStorage`. A full database export/import is provided via the `Export JSON` and `Reset Data` buttons.
-
----
-
-*Prepared by **Mohit** for the **RISA Growth APM Assignment**.*
+You can run the application with zero configuration. To connect a live Groq API key:
+1. Create a `.env` file in the root directory:
+   ```env
+   VITE_GROQ_API_KEY=your_groq_api_key_here
+   ```
+2. Or open the **AI Growth Analyst** tab inside the application, click **Configure LLM (⚙️)**, and paste your API key directly in the browser settings drawer.

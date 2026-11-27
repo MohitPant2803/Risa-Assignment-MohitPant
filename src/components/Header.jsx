@@ -1,13 +1,11 @@
 import React from 'react';
 import { 
   Play, 
-  FileText, 
   Download, 
   RotateCcw, 
   MapPin, 
   Calendar,
-  Sparkles,
-  BarChart2
+  Sparkles
 } from 'lucide-react';
 
 export default function Header({ 
@@ -16,7 +14,6 @@ export default function Header({
   onResetData, 
   onExportData, 
   onOpenWalkthrough, 
-  onOpenSlides, 
   activeTab, 
   setActiveTab 
 }) {
@@ -52,14 +49,6 @@ export default function Header({
           >
             <Play className="w-2.5 h-2.5 fill-white" />
             <span>Evaluator Walkthrough</span>
-          </button>
-
-          <button
-            onClick={onOpenSlides}
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#FFFFFF] hover:bg-[#F9FAFB] text-[#172033] border border-[#E4E7EC] text-[11px] font-medium transition cursor-pointer"
-          >
-            <FileText className="w-3 h-3 text-[#667085]" />
-            <span>Strategy Slides PDF</span>
           </button>
         </div>
       </div>

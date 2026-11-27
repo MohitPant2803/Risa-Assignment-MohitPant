@@ -3,12 +3,9 @@ node_modules/
 .pnp
 .pnp.js
 
-# Testing and Logs
-coverage/
-*.log
-npm-debug.log*
-yarn-debug.log*
-pnpm-debug.log*
+# Build artifacts
+dist/
+dist-ssr/
 
 # Environment files
 .env
@@ -17,11 +14,22 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 
-# Editor directories and OS files
+# Logs and databases
+*.log
+*.sqlite
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Test scripts, datasets & local temporary files
+*.py
+*.xlsx
+*.pdf
+*.png
+slides.html
+
+# Editor & OS files
 .DS_Store
 .idea/
 .vscode/
 Thumbs.db
-
-# Vite / bundler temporary files
-*.tsbuildinfo

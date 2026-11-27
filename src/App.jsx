@@ -5,7 +5,6 @@ import CampaignManager from './components/CampaignManager';
 import TaskManager from './components/TaskManager';
 import AiAnalyst from './components/AiAnalyst';
 import EvaluatorWalkthroughModal from './components/EvaluatorWalkthroughModal';
-import SlideViewerModal from './components/SlideViewerModal';
 import festivalData from './data/festivalData.json';
 
 export default function App() {
@@ -15,7 +14,6 @@ export default function App() {
 
   const [activeTab, setActiveTab] = useState('dashboard');
   const [isWalkthroughOpen, setIsWalkthroughOpen] = useState(false);
-  const [isSlidesOpen, setIsSlidesOpen] = useState(false);
   const [toastMessage, setToastMessage] = useState(null);
 
   // Initialize Campaigns per mode
@@ -190,7 +188,6 @@ export default function App() {
         onResetData={handleResetData}
         onExportData={handleExportData}
         onOpenWalkthrough={() => setIsWalkthroughOpen(true)}
-        onOpenSlides={() => setIsSlidesOpen(true)}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -249,11 +246,6 @@ export default function App() {
         onClose={() => setIsWalkthroughOpen(false)}
         onRunQuery={handleRunWalkthroughQuery}
         setActiveTab={setActiveTab}
-      />
-
-      <SlideViewerModal
-        isOpen={isSlidesOpen}
-        onClose={() => setIsSlidesOpen(false)}
       />
 
       {/* Toast Notification */}
